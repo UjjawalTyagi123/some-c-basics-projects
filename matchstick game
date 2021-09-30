@@ -1,0 +1,104 @@
+
+
+#include<stdio.h>
+#include<stdlib.h>
+
+char s[9]={'1','2','3','4','5','6','7','8','9'};
+char p;
+void tic(int,char);
+void tic(int x,char y)
+{
+      s[x-1]=y;
+      printf(" __ __ __\n");
+      printf("|%c |%c |%c |\n",s[0],s[1],s[2]);
+      printf("|__|__|__|\n");
+     // printf(" _ _ _\n");
+      printf("|%c |%c |%c |\n",s[3],s[4],s[5]);
+      printf("|__|__|__|\n");
+  // printf(" _ _ _\n");
+    
+      printf("|%c |%c |%c |\n",s[6],s[7],s[8]);
+      printf("|__|__|__|\n");
+     // printf("|   |   |   |");
+    //  printf("____________\n");
+      
+     // exit(0);
+
+
+}
+void main()
+{ int i,n;
+char x,o;
+      printf(" __ __ __\n");
+      printf("|%c |%c |%c |\n",s[0],s[1],s[2]);
+      printf("|__|__|__|\n");
+     // printf(" _ _ _\n");
+      printf("|%c |%c |%c |\n",s[3],s[4],s[5]);
+      printf("|__|__|__|\n");
+  // printf(" _ _ _\n");
+    
+      printf("|%c |%c |%c |\n",s[6],s[7],s[8]);
+      printf("|__|__|__|\n");
+      printf("\nGUYS X IS RESERVED FOR 1 PLAYER & O IS RESERVED FOR 2 PLAYER\n");
+      for(i=1;i<=9;i++)
+      { //system("cls");
+            printf("\nENTER POSSITION NUMBER MENTIONED IN BOX YOUR CHOICE\n");
+            scanf("%d",&n);
+            if(i%2==0)
+           p='o';
+            else
+            p='x';
+            switch(n)
+            {
+                  case 1:
+                  s[0]=p;
+                  tic(1,p);
+                  break;
+                  case 2:
+                  s[1]=p;
+                  tic(2,p);
+                  break;
+                 
+                  case 3:
+                  s[2]=p;
+                  tic(3,p);
+                  break;
+                  case 4:
+                  s[3]=p;
+                  tic(4,p);
+                  break;
+                  case 5:
+                  s[4]=p;
+                  tic(5,p);
+                  break;
+                  case 6:
+                  s[5]=p;
+                  tic(6,p);
+                  break;
+                  case 7:
+                  s[6]=p;
+                  tic(7,p);
+                  break;
+                  case 8:
+                  s[7]=p;
+                  tic(8,p);
+                  break;
+                  case 9:
+                  s[8]=p;
+                  tic(9,p);
+                  break;
+
+
+            }
+           
+           if((s[0]==s[1]&&s[1]==s[2])||(s[3]==s[4]&&s[4]==s[5])||(s[6]==s[7]&&s[7]==s[8])||(s[0]==s[4]&&s[4]==s[8])||(s[2]==s[4]&&s[4]==s[6])||(s[0]==s[3]&&s[3]==s[6])||(s[1]==s[4]&&s[4]==s[7])||(s[2]==s[5]&&s[5]==s[8]))
+           {
+      printf("\n CONGRATULATION DEAR YOU WIN THE MATCH");
+      break;
+           }
+
+
+      }
+      
+      
+}
