@@ -1,0 +1,53 @@
+
+
+#include<stdio.h>
+#include<stdlib.h>
+
+void main()
+{
+      int i=1,n,l=0,a=0,b=0,c=0,x=0,y=0,z=0,d=0;
+      while(i>0)
+{
+  system("cls");
+  printf("1.BUS\n");
+   printf("2.CYCLE\n");
+    printf("3.RIKSHAW\n");
+     printf("4.TO CHECK STATUS\n");
+      printf("5.EXIT\n\n");
+      if(d==1){
+       printf("TOTAL BUSES ARRIVED=%d\n",a);
+                printf("TOTAL CYCLES ARRIVED=%d\n",b);
+                    printf("TOTAL RIKSHAWS ARRIVED=%d\n",c);
+                        printf("TOTAL AMOUNT=%d\n\n",(x+y+z));
+                        d=0;}
+      printf("ENTER YOUR CHICES\n\n");
+      printf("ENTER\n");
+      scanf("%d",&n);
+      switch(n)
+      {https:
+            case 1:
+            a=a+1;
+            x=x+100;
+            break;
+            case 2:
+            b=b+1;
+            y=y+20;
+            break;
+            case 3:
+            c=c+1;
+            z=z+50;
+            break;
+            case 5:
+            l=1;
+            break;
+            case 4:
+            d=1;
+                         break;
+                       
+      }
+      if(l==1)
+      break;
+      i++;
+}
+      
+}
